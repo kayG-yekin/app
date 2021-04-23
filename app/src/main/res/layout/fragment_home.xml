@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/silver"
+    tools:context=".ui.home.HomeFragment" >
+
+    <com.synnapps.carouselview.CarouselView
+        android:id="@+id/carouselView"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        app:autoPlay="true"
+        app:fillColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:pageColor="@color/black"
+        app:radius="6dp"
+        app:slideInterval="4000"
+        app:strokeColor="@color/teal_700"
+        app:strokeWidth="1dp"
+        tools:ignore="MissingConstraints">
+
+    </com.synnapps.carouselview.CarouselView>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/ritual"
+        android:layout_width="170dp"
+        android:layout_height="146dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+
+        android:layout_marginTop="40dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/carouselView"
+        app:shapeAppearanceOverlay="@style/roundedSquared"
+        app:srcCompat="@drawable/r" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/offering"
+        android:layout_width="161dp"
+        android:layout_height="125dp"
+        android:layout_marginTop="52dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.288"
+        app:layout_constraintStart_toEndOf="@+id/ritual"
+        app:layout_constraintTop_toBottomOf="@+id/carouselView"
+        app:shapeAppearanceOverlay="@style/roundedSquared"
+        app:srcCompat="@drawable/offering" />
+
+    <TextView
+        android:id="@+id/rTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ritual"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/oTv"
+        app:layout_constraintHorizontal_bias="0.406"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ritual"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/oTv"
+        android:layout_width="38dp"
+        android:layout_height="22dp"
+        android:gravity="center_horizontal"
+        android:text="offer"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.734"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/offering"
+        app:layout_constraintVertical_bias="0.024" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/prayer"
+        android:layout_width="164dp"
+        android:layout_height="138dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.862"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/oTv"
+        app:layout_constraintVertical_bias="0.218"
+        app:shapeAppearanceOverlay="@style/roundedSquared"
+        app:srcCompat="@drawable/prayer" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/prostration"
+        android:layout_width="163dp"
+        android:layout_height="130dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/prayer"
+        app:layout_constraintHorizontal_bias="0.56"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rTv"
+        app:layout_constraintVertical_bias="0.262"
+        app:shapeAppearanceOverlay="@style/roundedSquared"
+        app:srcCompat="@drawable/prostration" />
+
+    <TextView
+        android:id="@+id/pTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="prostration"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/praTv"
+        app:layout_constraintHorizontal_bias="0.42"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/prostration"
+        app:layout_constraintVertical_bias="0.093" />
+
+    <TextView
+        android:id="@+id/praTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="prayer"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.731"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/prayer"
+        app:layout_constraintVertical_bias="0.093" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
