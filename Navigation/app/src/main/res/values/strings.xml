@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Chhokhab</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Guest</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_login">Login</string>
+    <string name="menu_home">Chhokhab</string>
+    <string name="menu_gallery">Register</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="string">Check to procced</string>
+
+    <string-array name="occupation">
+        <item>Select user type</item>
+        <item>Lam</item>
+        <item>Seeker</item>
+    </string-array>
+</resources>
